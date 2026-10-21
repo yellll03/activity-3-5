@@ -16,8 +16,8 @@ function ProductCard({ product, showActions, onEdit, onDelete }) {
 
       <div className="p-5">
         <div className="mb-3 flex items-start justify-between gap-3">
-          <h3 className="font-display text-2xl font-semibold leading-tight text-[#3b3552]">{product.name}</h3>
-          <span className="mt-1 shrink-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#b2abc0]">Makeup</span>
+          <h3 className="font-display text-xl font-medium leading-snug text-[#3b3552]">{product.name}</h3>
+          <span className="mt-1 shrink-0 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#b2abc0]">Glam</span>
         </div>
         <p className="text-sm leading-6 text-[#8a8399]">{product.description}</p>
 

@@ -47,9 +47,9 @@ function ProductForm({ editingProduct, onSubmit, onCancel }) {
       className="form-panel space-y-4 p-6 lg:sticky lg:top-24"
     >
       <p className="eyebrow">
-        {editingProduct ? "Update listing" : "New listing"}
+        {editingProduct ? "Glam it up" : "Add some sparkle"}
       </p>
-      <h2 className="font-display text-3xl font-semibold text-[#3b3552]">
+      <h2 className="font-display text-3xl font-medium italic text-[#3b3552]">
         {editingProduct ? "Edit Product" : "Add Product"}
       </h2>
 

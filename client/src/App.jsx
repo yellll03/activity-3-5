@@ -78,7 +78,7 @@ function App() {
       )}
 
       <footer className="mt-8 border-t border-[#ece3f1] py-10 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#8a8399]">
-        Made by Leah Jane L. Gregorio · INF 239
+        Leah Jane L. Gregorio · INF 239
       </footer>
     </div>
   );
