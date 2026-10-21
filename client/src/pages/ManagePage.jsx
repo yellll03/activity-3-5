@@ -13,12 +13,12 @@ function ManagePage({ products, editingProduct, onSave, onCancel, onEdit, onDele
 
       <section>
         <p className="eyebrow mb-2">
-          Studio desk
+          Vanity desk
         </p>
         <h2 className="section-heading mb-2">
-          Manage products <span className="text-[#989bb0]">({products.length})</span>
+          Manage products <span className="text-[#b2abc0]">({products.length})</span>
         </h2>
-        <p className="mb-6 text-sm text-[#71758a]">Keep the collection current and considered.</p>
+        <p className="mb-6 text-sm text-[#8a8399]">Add, edit, and remove products from the collection.</p>
         <ProductGrid products={products} showActions onEdit={onEdit} onDelete={onDelete} />
       </section>
     </main>

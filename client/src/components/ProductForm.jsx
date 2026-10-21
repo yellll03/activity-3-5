@@ -49,7 +49,7 @@ function ProductForm({ editingProduct, onSubmit, onCancel }) {
       <p className="eyebrow">
         {editingProduct ? "Update listing" : "New listing"}
       </p>
-      <h2 className="font-display text-3xl font-bold tracking-[-0.05em] text-[#171b35]">
+      <h2 className="font-display text-3xl font-semibold text-[#3b3552]">
         {editingProduct ? "Edit Product" : "Add Product"}
       </h2>
 
