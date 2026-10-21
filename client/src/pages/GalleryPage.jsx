@@ -15,7 +15,7 @@ function GalleryPage({ products, loading }) {
           Life is better in <span className="font-script text-rose">pink &amp; sparkle.</span>
         </h2>
         <p className="relative mt-3 max-w-lg text-muted">
-          Glam up with the Snow Ballet line by Flower Knows: pearly palettes, cotton-candy blush,
+          Glam up with our Pink Sparkle collection: pearly palettes, cotton-candy blush,
           and a glow so dreamy you'll want to twirl.
         </p>
         <p className="relative mt-3 text-sm font-semibold text-rose-deep">
