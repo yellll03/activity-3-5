@@ -78,7 +78,7 @@ function App() {
       )}
 
       <footer className="mt-8 border-t border-[#d9d9e8] py-10 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#71758a]">
-        ShowCase Product Gallery · made for everyday finds
+        Made by Leah Jane L. Gregorio · INF 239
       </footer>
     </div>
   );

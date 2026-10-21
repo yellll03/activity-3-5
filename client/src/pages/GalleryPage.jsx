@@ -19,7 +19,7 @@ function GalleryPage({ products, loading }) {
         <div className="mt-9 flex items-center gap-4">
           <span className="hero-rule w-12"></span>
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#3155d9]">
-            {products.length} {products.length === 1 ? "item" : "items"} in the collection
+            {products.length} {products.length === 1 ? "item" : "items"} available · by Leah Jane L. Gregorio
           </p>
         </div>
         </div>
