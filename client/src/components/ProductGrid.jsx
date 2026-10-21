@@ -3,9 +3,8 @@ import ProductCard from "./ProductCard";
 function ProductGrid({ products, showActions = false, onEdit, onDelete }) {
   if (products.length === 0) {
     return (
-      <div className="empty-state py-20 text-center text-[#8a8399]">
-        <p className="font-display text-2xl font-semibold text-[#3b3552]">Your vanity is empty, darling</p>
-        <p className="mt-2 text-sm">Add your first fabulous find to make it sparkle.</p>
+      <div className="rounded-3xl border-2 border-dashed border-line py-20 text-center text-muted">
+        Your vanity is empty, darling.
       </div>
     );
   }

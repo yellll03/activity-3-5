@@ -13,14 +13,9 @@ function App() {
 
   useEffect(() => {
     getProducts()
-      .then((data) => {
-        setProducts(data);
-        setLoading(false);
-      })
-      .catch(() => {
-        setError("Could not load products. Refresh in 1 minute.");
-        setLoading(false);
-      });
+      .then((data) => setProducts(data))
+      .catch(() => setError("Could not load products. Refresh in 1 minute."))
+      .finally(() => setLoading(false));
   }, []);
 
   const saveProduct = async (data) => {
@@ -41,9 +36,7 @@ function App() {
     try {
       await deleteProduct(id);
       setProducts((prev) => prev.filter((p) => p._id !== id));
-      if (editingProduct && editingProduct._id === id) {
-        setEditingProduct(null);
-      }
+      if (editingProduct?._id === id) setEditingProduct(null);
     } catch {
       setError("Could not delete the product.");
     }
@@ -55,12 +48,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-cream text-ink">
       <Navbar view={view} onChangeView={setView} />
 
       {error && (
         <div className="mx-auto mt-6 max-w-6xl px-6">
-          <p className="border border-[#edc9bc] bg-[#fff0eb] p-4 text-[#a94e35]">{error}</p>
+          <p className="rounded-2xl bg-petal p-4 text-rose-deep">{error}</p>
         </div>
       )}
 
@@ -77,7 +70,7 @@ function App() {
         />
       )}
 
-      <footer className="mt-8 border-t border-[#ece3f1] py-10 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#8a8399]">
+      <footer className="py-10 text-center text-sm text-muted">
         Leah Jane L. Gregorio · INF 239
       </footer>
     </div>

@@ -1,28 +1,24 @@
 function Navbar({ view, onChangeView }) {
   const tabClass = (name) =>
-    `nav-tab ${
+    `rounded-full px-5 py-2 text-sm font-medium transition ${
       view === name
-        ? "nav-tab-active"
-        : ""
+        ? "bg-linear-to-r from-rose to-frost text-white shadow-md shadow-rose/30"
+        : "text-muted hover:bg-white hover:text-ink"
     }`;
 
   return (
-    <nav className="site-nav sticky top-0 z-20">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 md:px-8">
-        <button
-          className="text-left"
-          onClick={() => onChangeView("gallery")}
-          aria-label="Go to gallery"
-        >
-          <p className="brand-mark font-script text-4xl leading-none text-[#3b3552]">
-            <span>Show<span className="text-[#d9849b]">Case</span></span>
-          </p>
-          <p className="ml-[1.35rem] text-[10px] font-bold uppercase tracking-[0.2em] text-[#8a8399]">
+    <nav className="sticky top-0 z-20 border-b border-line bg-cream/80 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <div>
+          <h1 className="font-script text-4xl leading-none text-ink">
+            Show<span className="text-rose">Case</span>
+          </h1>
+          <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-muted">
             your dream vanity, darling
           </p>
-        </button>
+        </div>
 
-        <div className="nav-switcher">
+        <div className="flex gap-1 rounded-full bg-white p-1 shadow-sm ring-1 ring-line">
           <button className={tabClass("gallery")} onClick={() => onChangeView("gallery")}>
             Gallery
           </button>
