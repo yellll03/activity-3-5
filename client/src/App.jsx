@@ -77,7 +77,7 @@ function App() {
         />
       )}
 
-      <footer className="mt-8 border-t border-[#ded8cd] py-10 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#89938d]">
+      <footer className="mt-8 border-t border-[#d9d9e8] py-10 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#71758a]">
         ShowCase Product Gallery · made for everyday finds
       </footer>
     </div>

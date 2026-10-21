@@ -16,9 +16,9 @@ function ManagePage({ products, editingProduct, onSave, onCancel, onEdit, onDele
           Studio desk
         </p>
         <h2 className="section-heading mb-2">
-          Manage products <span className="text-[#9aa39d]">({products.length})</span>
+          Manage products <span className="text-[#989bb0]">({products.length})</span>
         </h2>
-        <p className="mb-6 text-sm text-[#7d8881]">Keep the collection current and considered.</p>
+        <p className="mb-6 text-sm text-[#71758a]">Keep the collection current and considered.</p>
         <ProductGrid products={products} showActions onEdit={onEdit} onDelete={onDelete} />
       </section>
     </main>

@@ -10,15 +10,15 @@ function GalleryPage({ products, loading }) {
         <p className="eyebrow">
           The latest edit · 01
         </p>
-        <h2 className="mt-4 max-w-xl font-display text-5xl leading-[0.95] font-semibold tracking-tight text-[#203b34] md:text-7xl">
+        <h2 className="mt-4 max-w-xl font-display text-5xl leading-[0.9] font-bold tracking-[-0.07em] text-[#171b35] md:text-7xl">
           Useful things,<br /> thoughtfully chosen.
         </h2>
-        <p className="mt-6 max-w-lg text-sm leading-7 text-[#5f7067] md:text-base">
+        <p className="mt-6 max-w-lg text-sm leading-7 text-[#5f6680] md:text-base">
           A considered collection of everyday pieces for work, home, and the moments in between.
         </p>
         <div className="mt-9 flex items-center gap-4">
           <span className="hero-rule w-12"></span>
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#2f6555]">
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#3155d9]">
             {products.length} {products.length === 1 ? "item" : "items"} in the collection
           </p>
         </div>
@@ -26,7 +26,7 @@ function GalleryPage({ products, loading }) {
       </section>
 
       {loading ? (
-        <p className="py-20 text-center text-sm font-semibold text-[#7d8881]">Loading products...</p>
+        <p className="py-20 text-center text-sm font-semibold text-[#71758a]">Loading products...</p>
       ) : (
         <section>
           <div className="mb-6 flex items-end justify-between gap-4">
@@ -34,7 +34,7 @@ function GalleryPage({ products, loading }) {
               <p className="eyebrow mb-2">Browse the collection</p>
               <h2 className="section-heading">Selected objects</h2>
             </div>
-            <p className="hidden max-w-xs text-right text-xs leading-5 text-[#7d8881] sm:block">
+            <p className="hidden max-w-xs text-right text-xs leading-5 text-[#71758a] sm:block">
               Small details, practical forms, and pieces made to stay in your orbit.
             </p>
           </div>

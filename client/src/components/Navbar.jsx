@@ -14,10 +14,10 @@ function Navbar({ view, onChangeView }) {
           onClick={() => onChangeView("gallery")}
           aria-label="Go to gallery"
         >
-          <p className="brand-mark font-display text-2xl font-semibold tracking-tight text-[#1e2925]">
-            Show<span className="text-[#d26043]">Case</span>
+          <p className="brand-mark font-display text-2xl font-semibold tracking-tight text-[#171b35]">
+            Show<span className="text-[#ef7257]">Case</span>
           </p>
-          <p className="ml-[1.35rem] text-[10px] font-bold uppercase tracking-[0.2em] text-[#7d8881]">
+          <p className="ml-[1.35rem] text-[10px] font-bold uppercase tracking-[0.2em] text-[#71758a]">
             objects with a point of view
           </p>
         </button>
