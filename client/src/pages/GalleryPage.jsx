@@ -4,28 +4,42 @@ function GalleryPage({ products, loading }) {
   return (
     <main className="mx-auto max-w-6xl px-5 py-8 md:px-8 md:py-12">
       <section
-        className="relative mb-10 overflow-hidden rounded-[2rem] bg-[#dce8df] px-7 py-10
-          shadow-sm md:px-14 md:py-14"
+        className="hero-panel mb-14 px-7 py-10 md:px-14 md:py-14"
       >
-        <div className="absolute -right-10 -top-20 h-64 w-64 rounded-full border-[28px] border-[#f7f4ee]/60"></div>
-        <p className="relative text-xs font-bold uppercase tracking-[0.25em] text-[#2f5d50]">
-          The latest edit
+        <div className="relative z-10 max-w-2xl">
+        <p className="eyebrow">
+          The latest edit · 01
         </p>
-        <h2 className="relative mt-3 max-w-xl font-display text-4xl leading-tight font-bold text-[#26312d] md:text-6xl">
-          Useful things, thoughtfully chosen.
+        <h2 className="mt-4 max-w-xl font-display text-5xl leading-[0.95] font-semibold tracking-tight text-[#203b34] md:text-7xl">
+          Useful things,<br /> thoughtfully chosen.
         </h2>
-        <p className="relative mt-4 max-w-lg text-base leading-7 text-[#5f7067]">
-          A calm collection of everyday pieces for work, home, and the moments in between.
+        <p className="mt-6 max-w-lg text-sm leading-7 text-[#5f7067] md:text-base">
+          A considered collection of everyday pieces for work, home, and the moments in between.
         </p>
-        <p className="relative mt-7 text-sm font-semibold text-[#2f5d50]">
-          {products.length} {products.length === 1 ? "item" : "items"} in the collection
-        </p>
+        <div className="mt-9 flex items-center gap-4">
+          <span className="hero-rule w-12"></span>
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#2f6555]">
+            {products.length} {products.length === 1 ? "item" : "items"} in the collection
+          </p>
+        </div>
+        </div>
       </section>
 
       {loading ? (
-        <p className="py-20 text-center text-slate-400">Loading products...</p>
+        <p className="py-20 text-center text-sm font-semibold text-[#7d8881]">Loading products...</p>
       ) : (
-        <ProductGrid products={products} />
+        <section>
+          <div className="mb-6 flex items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow mb-2">Browse the collection</p>
+              <h2 className="section-heading">Selected objects</h2>
+            </div>
+            <p className="hidden max-w-xs text-right text-xs leading-5 text-[#7d8881] sm:block">
+              Small details, practical forms, and pieces made to stay in your orbit.
+            </p>
+          </div>
+          <ProductGrid products={products} />
+        </section>
       )}
     </main>
   );

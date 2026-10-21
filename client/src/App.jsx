@@ -55,12 +55,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800">
+    <div className="min-h-screen">
       <Navbar view={view} onChangeView={setView} />
 
       {error && (
         <div className="mx-auto mt-6 max-w-6xl px-6">
-          <p className="rounded-xl border border-[#f0cfc3] bg-[#fff0eb] p-4 text-[#a94e35]">{error}</p>
+          <p className="border border-[#edc9bc] bg-[#fff0eb] p-4 text-[#a94e35]">{error}</p>
         </div>
       )}
 
@@ -77,7 +77,7 @@ function App() {
         />
       )}
 
-      <footer className="border-t border-[#e6e0d5] py-10 text-center text-sm text-[#89938d]">
+      <footer className="mt-8 border-t border-[#ded8cd] py-10 text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#89938d]">
         ShowCase Product Gallery · made for everyday finds
       </footer>
     </div>

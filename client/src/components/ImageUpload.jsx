@@ -17,9 +17,7 @@ function ImageUpload({ image, onChange, onError }) {
 
   return (
     <label
-      className="flex h-48 cursor-pointer items-center justify-center overflow-hidden rounded-xl
-        border-2 border-dashed border-[#cbd5cd] bg-[#f8faf7] text-sm text-[#89938d] transition
-        hover:border-[#2f5d50] hover:bg-[#edf3ee] hover:text-[#2f5d50]"
+      className="upload-zone text-sm"
     >
       {image ? (
         <img src={image} alt="Preview" className="h-full w-full object-cover" />

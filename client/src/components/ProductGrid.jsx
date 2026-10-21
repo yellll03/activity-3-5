@@ -3,8 +3,8 @@ import ProductCard from "./ProductCard";
 function ProductGrid({ products, showActions = false, onEdit, onDelete }) {
   if (products.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-[#cbd5cd] bg-[#fffdfa] py-20 text-center text-[#89938d]">
-        <p className="font-display text-xl font-bold text-[#4b5b53]">Nothing here yet</p>
+      <div className="empty-state py-20 text-center text-[#89938d]">
+        <p className="font-display text-2xl font-semibold text-[#38564b]">Nothing here yet</p>
         <p className="mt-2 text-sm">Add your first product to start the collection.</p>
       </div>
     );
